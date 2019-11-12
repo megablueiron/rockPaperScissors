@@ -62,8 +62,10 @@ public class RockPaperScissors {
             //randomly generating the opponents choice
             opponentChoice = randomGenerator(CHOICE_RANGE);
             
-            //Taking the player's and opponent's choices and figuring out the result
-            result(playerChoice, opponentChoice);
+            //Taking the player's and opponent's choices and figuring out the result as long as the option isn't exit
+            if (playerChoice != 4) {
+                result(playerChoice, opponentChoice);
+            }
             
             } while (playerChoice!=4);
         }
